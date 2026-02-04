@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="st3.css">
+</head>
+
+<body>
+    <svg style="display:none">
+        <symbol id="icon-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 0 0 0 1.06l6.25 6.25a.75.75 0 0 0 1.06 0l6.25-6.25a.75.75 0 0 0-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 0 0-1.06 0z"/>
+        </symbol>
+    </svg>
+
+    <div class="container">
+        <div class="header">
+            <div class="block-1">
+                <div class="logo">
+                    <svg height="32" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="32" data-view-component="true" class="octicon octicon-mark-github">
+                        <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+                    </svg>
+                </div>
+                <div class="platform">
+                    Platform
+                    <svg class="icon icon-down"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <div class="solutions">
+                    Solutions
+                    <svg class="icon icon-down"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <div class="resources">
+                    Resources
+                    <svg class="icon icon-down"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <div class="opensource">
+                    Open Source
+                    <svg class="icon icon-down"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <div class="enterprise">
+                    Enterprise
+                    <svg class="icon icon-down"><use href="#icon-chevron-down"></use></svg>
+                </div>
+                <div class="pricing">Pricing</div>
+            </div>
+            <div class="block-2">
+                <button class="search">
+                    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" width="16"><path d="M10.68 11.74a6 6 0 0 1-7.922-8.982 6 6 0 0 1 8.982 7.922l3.04 3.04a.749.749 0 0 1-.326 1.275.749.749 0 0 1-.734-.215ZM11.5 7a4.499 4.499 0 1 0-8.997 0A4.499 4.499 0 0 0 11.5 7Z"></path></svg>
+                </button>
+                <button class="sign-in">Sign in</button>
+                <button class="sign-up">Sign up</button>
+            </div>
+        </div>
+
+        <div class="hero-section">
+            <h1 class="hero-title">Try the Copilot-powered platform</h1>
+            <div class="hero-text">We get it, there's a lot you can do with GitHub. That's why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</div>
+            <button class="hero-button">Start free for 30 days</button>
+        </div>
+
+        <div class="plans">
+            <div class="plan">
+                <div class="plan-recommended">RECOMMENDED</div>
+                <div class="plan-header">
+                    <div class="plan-title">Free</div>
+                    <div class="plan-description">The basics for individuals and organizations</div>
+                    <div class="plan-price">0 USD per user/month</div>
+                </div>
+                <div class="plan-buttons">
+                    <button class="plan-button">Join for free</button>
+                </div>
+                <div class="plan-features">
+                    <details class="plan-item">
+                        <summary class="plan-summary">Unlimited public/private repositories</summary>
+                        <div class="plan-desc">Host open source projects in public GitHub repositories, accessible via web or command line. Public repositories are accessible to anyone at GitHub.com.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Dependabot security and version updates</summary>
+                        <div class="plan-desc">Keep projects secure by automatically opening pull requests to update vulnerable dependencies and keep them up to date.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">2,000 CI/CD minutes/month</summary>
+                        <div class="plan-desc">Free for public repositories. Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">500MB of Packages storage</summary>
+                        <div class="plan-desc">Free for public repositories. Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Issues & Projects</summary>
+                        <div class="plan-desc">Give your developers flexible features for project management that adapts to any team, project, and workflow — all alongside your code.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Community support</summary>
+                        <div class="plan-desc">Get help with most of your GitHub questions and issues in our Community Forum.</div>
+                    </details>
+                    <div class="plan-addon-title">Featured add-ons</div>
+                    <details class="plan-item">
+                        <summary class="plan-summary">GitHub Copilot Access</summary>
+                        <div class="plan-desc">With GitHub Copilot, get suggestions for whole lines or entire functions—right inside your editor.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">GitHub Codespaces Access</summary>
+                        <div class="plan-desc">With GitHub Codespaces, get an instant dev environment in the cloud, so you can code anywhere on any device.</div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="plan-recommended">RECOMMENDED</div>
+                <div class="plan-header">
+                    <div class="plan-title">Team</div>
+                    <div class="plan-description">Advanced collaboration for individuals and organizations</div>
+                    <div class="plan-price">4 USD per user/month</div>
+                </div>
+                <div class="plan-buttons">
+                    <button class="plan-button">Continue with Team</button>
+                </div>
+                <div class="plan-features">
+                    <details class="plan-item">
+                        <summary class="plan-summary">Everything included in Free, plus...</summary>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Access to GitHub Codespaces</summary>
+                        <div class="plan-desc">Blazing fast cloud developer environments with flexible compute and pre-configured containers, developers can code, collaborate, and debug from any browser. Pay only for what you use with compute fees starting at $0.18/hr and storage fees at $0.07/GB per month.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Repository rules</summary>
+                        <div class="plan-desc">Enforce restrictions on how code branches and tags are merged across your organization, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Multiple reviewers in pull requests</summary>
+                        <div class="plan-desc">Assign multiple users or a team to review a pull request.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Draft pull requests</summary>
+                        <div class="plan-desc">Easily discuss and collaborate on pull requests before submitting to formal review.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Code owners</summary>
+                        <div class="plan-desc">Automatically request reviews—or require approval—by selected contributors when changes are made to sections of code that they own.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Required reviewers</summary>
+                        <div class="plan-desc">Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Pages and Wikis</summary>
+                        <div class="plan-desc">Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Environment deployment branches and secrets</summary>
+                        <div class="plan-desc">A job cannot access secrets that are defined in an environment unless it is running on the specified branch.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">3,000 CI/CD minutes/month</summary>
+                        <div class="plan-desc">Free for public repositories. Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">2GB of Packages storage</summary>
+                        <div class="plan-desc">Free for public repositories. Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Web-based support</summary>
+                        <div class="plan-desc">GitHub Support can help you troubleshoot issues you run into while using GitHub.</div>
+                    </details>
+                    <div class="plan-addon-title">Featured add-ons</div>
+                    <details class="plan-item">
+                        <summary class="plan-summary">GitHub Secret Protection</summary>
+                        <div class="plan-desc">Ensure your secrets stay secure. Mitigate risk associated with exposed secrets in your repositories, while preventing new leaks before they happen with push protection.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">GitHub Code Security</summary>
+                        <div class="plan-desc">Find and fix vulnerabilities in your code before they reach production. Prioritize your Dependabot alerts with automated triage rules.</div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="plan">
+                <div class="plan-recommended">RECOMMENDED</div>
+                <div class="plan-header">
+                    <div class="plan-title">Enterprise</div>
+                    <div class="plan-description">Security, compliance, and flexible deployment</div>
+                    <div class="plan-price">21 USD per user/month</div>
+                </div>
+                <div class="plan-buttons">
+                    <button class="plan-button">Start a free trial</button>
+                    <button class="plan-button-secondary">Contact Sales</button>
+                </div>
+                <div class="plan-features">
+                    <details class="plan-item">
+                        <summary class="plan-summary">Everything included in Team, plus...</summary>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Data residency</summary>
+                        <div class="plan-desc">GitHub Enterprise Cloud offers a multi-tenant enterprise SaaS solution on Microsoft Azure, allowing you to choose a regional cloud deployment for data residency, so your in-scope data is stored at rest in a designated location.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Enterprise Managed Users</summary>
+                        <div class="plan-desc">Own and control the user accounts of your enterprise members through your identity provider (IdP).</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">User provisioning through SCIM</summary>
+                        <div class="plan-desc">Automatically invite members to join your organization when you grant access on your IdP. If you remove a member's access to your GitHub organization on your SAML IdP, the member will be automatically removed from the GitHub organization.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Enterprise Account to centrally manage multiple organizations</summary>
+                        <div class="plan-desc">GitHub Enterprise Cloud includes the option to create an enterprise account, which enables collaboration between multiple organizations, gives administrators a single point of visibility and management and brings license cost savings for identical users in multiple organizations.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Environment protection rules</summary>
+                        <div class="plan-desc">When a workflow job references an environment, the job won't start until all of the environment's protection rules pass.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Repository rules</summary>
+                        <div class="plan-desc">Enforce branch and tag protections, as well as push rules across your enterprise. Rule insights allow you to assess impact of rules before and during enforcement.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Audit Log API</summary>
+                        <div class="plan-desc">As a GitHub Enterprise Cloud organization administrator, you can now access log events using our GraphQL API and monitor the activity in your organization.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">SOC1, SOC2, type 2 reports annually</summary>
+                        <div class="plan-desc">GitHub offers AICPA System and Organization Controls (SOC) 1 Type 2 and SOC 2 Type 2 reports with IAASB International Standards on Assurance Engagements, ISAE 3000, and ISAE 3402.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">FedRAMP Tailored Authority to Operate (ATO)</summary>
+                        <div class="plan-desc">Government users can host projects on GitHub Enterprise Cloud with the confidence that our platform meets the low impact software-as-a-service (SaaS) baseline of security standards set by our U.S. federal government partners.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">SAML single sign-on</summary>
+                        <div class="plan-desc">Use an identity provider to manage the identities of GitHub users and applications.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Advanced auditing</summary>
+                        <div class="plan-desc">Quickly review the actions performed by members of your organization. Keep copies of audit log data to ensure secure IP and maintain compliance for your organization.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">GitHub Connect</summary>
+                        <div class="plan-desc">Share features and workflows between your GitHub Enterprise Server instance and GitHub Enterprise Cloud.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">50,000 CI/CD minutes/month</summary>
+                        <div class="plan-desc">Free for public repositories. Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.</div>
+                    </details>
+                    <details class="plan-item">
+                        <summary class="plan-summary">50GB of Packages storage</summary>
+                        <div class="plan-desc">Free for public repositories. Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.</div>
+                    </details>
+                    <div class="plan-addon-title">Exclusive add-on</div>
+                    <details class="plan-item">
+                        <summary class="plan-summary">Premium support</summary>
+                        <div class="plan-desc">With Premium, get a 30-minute SLA on Urgent tickets and 24/7 web and phone support via callback request. With Premium Plus, get everything in Premium, assigned Customer Reliability Engineer and more.</div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <div class="add-ons">
+            <h1 class="additional-add-ons">Additional add-ons</h1>
+            <div class="add-ons-grid">
+                <div class="add-on-card">
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="M7.998 15.035c-4.562 0-7.873-2.914-7.998-3.749V9.338c.085-.628.677-1.686 1.588-2.065.013-.07.024-.143.036-.218.029-.183.06-.384.126-.612-.201-.508-.254-1.084-.254-1.656 0-.87.128-1.769.693-2.484.579-.733 1.494-1.124 2.724-1.261 1.206-.134 2.262.034 2.944.765.05.053.096.108.139.165.044-.057.094-.112.143-.165.682-.731 1.738-.899 2.944-.765 1.23.137 2.145.528 2.724 1.261.566.715.693 1.614.693 2.484 0 .572-.053 1.148-.254 1.656.066.228.098.429.126.612.012.076.024.148.037.218.924.385 1.522 1.471 1.591 2.095v1.872c0 .766-3.351 3.795-8.002 3.795Zm0-1.485c2.28 0 4.584-1.11 5.002-1.433V7.862l-.023-.116c-.49.21-1.075.291-1.727.291-1.146 0-2.059-.327-2.71-.991A3.222 3.222 0 0 1 8 6.303a3.24 3.24 0 0 1-.544.743c-.65.664-1.563.991-2.71.991-.652 0-1.236-.081-1.727-.291l-.023.116v4.255c.419.323 2.722 1.433 5.002 1.433ZM6.762 2.83c-.193-.206-.637-.413-1.682-.297-1.019.113-1.479.404-1.713.7-.247.312-.369.789-.369 1.554 0 .793.129 1.171.308 1.371.162.181.519.379 1.442.379.853 0 1.339-.235 1.638-.54.315-.322.527-.827.617-1.553.117-.935-.037-1.395-.241-1.614Zm4.155-.297c-1.044-.116-1.488.091-1.681.297-.204.219-.359.679-.242 1.614.091.726.303 1.231.618 1.553.299.305.784.54 1.638.54.922 0 1.28-.198 1.442-.379.179-.2.308-.578.308-1.371 0-.765-.123-1.242-.37-1.554-.233-.296-.693-.587-1.713-.7Z"></path><path fill="currentColor" d="M6.25 9.037a.75.75 0 0 1 .75.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 .75-.75Zm4.25.75v1.501a.75.75 0 0 1-1.5 0V9.787a.75.75 0 0 1 1.5 0Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">GitHub Copilot</div>
+                    <div class="add-on-description">Get started for free with up to 2,000 completions and 50 chat requests per month.</div>
+                    <div class="add-on-link">Compare plans</div>
+                </div>
+
+                <div class="add-on-card">
+                    <div class="add-on-badge">New</div>
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="M10.628 7.25a2.25 2.25 0 1 1 0 1.5H8.622a2.25 2.25 0 0 1-2.513 1.466L5.03 12.124a2.25 2.25 0 1 1-1.262-.814l1.035-1.832A2.245 2.245 0 0 1 4.25 8c0-.566.209-1.082.553-1.478L3.768 4.69a2.25 2.25 0 1 1 1.262-.814l1.079 1.908A2.25 2.25 0 0 1 8.622 7.25ZM2.5 2.5a.75.75 0 1 0 1.5 0 .75.75 0 0 0-1.5 0Zm4 4.75a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm6.25 0a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Zm-9.5 5.5a.75.75 0 1 0 0 1.5.75.75 0 0 0 0-1.5Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">GitHub Models</div>
+                    <div class="add-on-description">Bring industry-leading AI into your workflow, securely, scalably, and with full developer control.</div>
+                    <div class="add-on-link">Learn more</div>
+                </div>
+
+                <div class="add-on-card">
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="m8.533.133 5.25 1.68A1.75 1.75 0 0 1 15 3.48V7c0 1.566-.32 3.182-1.303 4.682-.983 1.498-2.585 2.813-5.032 3.855a1.697 1.697 0 0 1-1.33 0c-2.447-1.042-4.049-2.357-5.032-3.855C1.32 10.182 1 8.566 1 7V3.48a1.75 1.75 0 0 1 1.217-1.667l5.25-1.68a1.748 1.748 0 0 1 1.066 0Zm-.61 1.429.001.001-5.25 1.68a.251.251 0 0 0-.174.237V7c0 1.36.275 2.666 1.057 3.859.784 1.194 2.121 2.342 4.366 3.298a.196.196 0 0 0 .154 0c2.245-.957 3.582-2.103 4.366-3.297C13.225 9.666 13.5 8.358 13.5 7V3.48a.25.25 0 0 0-.174-.238l-5.25-1.68a.25.25 0 0 0-.153 0ZM9.5 6.5c0 .536-.286 1.032-.75 1.3v2.45a.75.75 0 0 1-1.5 0V7.8A1.5 1.5 0 1 1 9.5 6.5Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">GitHub Advanced Security</div>
+                    <div class="add-on-description">Gain peace of mind with our security, privacy, and responsible AI policies.</div>
+                    <div class="add-on-link">Learn more</div>
+                </div>
+
+                <div class="add-on-card">
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="M0 11.25c0-.966.784-1.75 1.75-1.75h12.5c.966 0 1.75.784 1.75 1.75v3A1.75 1.75 0 0 1 14.25 16H1.75A1.75 1.75 0 0 1 0 14.25Zm2-9.5C2 .784 2.784 0 3.75 0h8.5C13.216 0 14 .784 14 1.75v5a1.75 1.75 0 0 1-1.75 1.75h-8.5A1.75 1.75 0 0 1 2 6.75Zm1.75-.25a.25.25 0 0 0-.25.25v5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-5a.25.25 0 0 0-.25-.25Zm-2 9.5a.25.25 0 0 0-.25.25v3c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-3a.25.25 0 0 0-.25-.25Z"></path><path fill="currentColor" d="M7 12.75a.75.75 0 0 1 .75-.75h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1-.75-.75Zm-4 0a.75.75 0 0 1 .75-.75h.5a.75.75 0 0 1 0 1.5h-.5a.75.75 0 0 1-.75-.75Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">GitHub Codespaces</div>
+                    <div class="add-on-description">Starting at $0.18 per hour of compute and $0.07 per GB of storage.</div>
+                    <div class="add-on-link">Learn more</div>
+                </div>
+
+                <div class="add-on-card">
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">Premium support</div>
+                    <div class="add-on-description">Get expert help for Enterprise Cloud and Enterprise—any hour your team needs it.</div>
+                    <div class="add-on-link">Learn more</div>
+                </div>
+
+                <div class="add-on-card">
+                    <div class="add-on-icon-wrap">
+                        <svg aria-hidden="true" viewBox="0 0 16 16" version="1.1"><path fill="currentColor" d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v1.5A1.75 1.75 0 0 1 14.25 6H1.75A1.75 1.75 0 0 1 0 4.25ZM1.75 7a.75.75 0 0 1 .75.75v5.5c0 .138.112.25.25.25h10.5a.25.25 0 0 0 .25-.25v-5.5a.75.75 0 0 1 1.5 0v5.5A1.75 1.75 0 0 1 13.25 15H2.75A1.75 1.75 0 0 1 1 13.25v-5.5A.75.75 0 0 1 1.75 7Zm0-4.5a.25.25 0 0 0-.25.25v1.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25v-1.5a.25.25 0 0 0-.25-.25ZM6.25 8h3.5a.75.75 0 0 1 0 1.5h-3.5a.75.75 0 0 1 0-1.5Z"></path></svg>
+                    </div>
+                    <div class="add-on-title">Git Large File Storage</div>
+                    <div class="add-on-description">$5 per month for 50 GB bandwidth and 50 GB of storage.</div>
+                    <div class="add-on-link">Learn more</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
