@@ -1,0 +1,7 @@
+<div class="product-grid">
+  @for(item of products; track item.id){
+    <app-product-card [product]="item"></app-product-card>
+  } @empty{
+  <p>Товары не найдены</p>
+}
+</div>
