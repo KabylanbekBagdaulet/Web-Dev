@@ -1,0 +1,77 @@
+.card {
+  border: 1px solid #e5e5e5;
+  width: 240px;
+  min-height: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+.productimage {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+.carouselimage {
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+.icon {
+  height: 60px;
+  width: 60px;
+}
+h2 {
+  font-weight: normal;
+  font-size: 15px;
+}
+a, a:visited {
+  text-decoration: none;
+  color: #0089d0;
+}
+a:hover {
+  text-decoration: underline;
+}
+#telegram {
+  width: 80%;
+}
+details p{
+  max-height: 200px;
+  overflow: auto;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.buttons button {
+  flex: 1;
+}
+.thumbnails {
+  position: relative;
+  display: flex; gap: 5px; margin-top: 5px; overflow-x: auto;"
+}
+.features {
+  display: flex;
+}
+.features button {
+  flex: 1;
+}
+.liked {
+  color: red;
+  font-size: 18px;
+}
+
+.delete {
+  font-weight: bold;
+  color: red;
+}
