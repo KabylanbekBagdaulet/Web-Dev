@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="carousel">
+    <a [href] = "product().link">
+      <img class="productimage" [src]="currentImage" alt="{{product().name}}">
+    </a>
+    <div class="buttons">
+      <button class="prevbutton" (click)="prev()"></button>
+      <button class="nextbutton" (click)="next()"></button>
+    </div>
+    <div class="description">
+      <h2>{{product().name}}</h2>
+      <p>{{product().rating}}</p>
+      <p>{{product().price}}</p>
+    </div>
+    <details>
+      <summary>Description</summary>
+      <p>{{product().description}}</p>
+    </details>
+    <div class="features">
+      <button (click)="like()" [class.liked]="liked">❤ {{product().likes}}</button>
+      <button (click)="remove()" class="delete">Delete</button>
+    </div>
+    <div class="icons">
+      <a [href]="product().link" target="_blank">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/ru/a/aa/Logo_of_Kaspi_bank.png" alt="Kaspi">
+      </a>
+      <a [href]="whatsapp" target="_blank">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+      </a>
+      <a [href]="telegram" target="_blank">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" id="telegram" alt="Telegram">
+      </a>
+    </div>
+  </div>
+</div>
