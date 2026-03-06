@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;700&display=swap');
+
+:host {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #f5f0e8;
+  margin: 0 0 2.5rem;
+  letter-spacing: -1px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+  background: rgba(255,255,255,0.04);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.card {
+  background: #0e0d0a;
+  padding: 1.75rem;
+}
+
+.card.full { grid-column: span 2; }
+
+.card-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #d4af37;
+  margin-bottom: 1rem;
+}
+
+.card h2 { font-size: 1.05rem; font-weight: 600; color: #d5cfc0; margin: 0 0 0.75rem; }
+
+p { color: #5a5040; font-size: 0.9rem; line-height: 1.7; margin: 0 0 0.75rem; }
+p:last-child { margin: 0; }
+p b { color: #d5cfc0; font-weight: 600; }
+
+.info-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.info-list li { display: flex; gap: 0.75rem; font-size: 0.88rem; color: #5a5040; }
+.info-list .lbl { color: #3a3020; font-weight: 600; min-width: 60px; }
+.info-list .val { color: #d5cfc0; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.07);
+  color: #7a7060;
+  padding: 0.3rem 0.75rem;
+  border-radius: 2px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+th { text-align: left; padding: 0.5rem 0.75rem; color: #3a3020; font-weight: 600; font-size: 0.72rem; letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.05); }
+td { padding: 0.6rem 0.75rem; border-bottom: 1px solid rgba(255,255,255,0.03); color: #5a5040; }
+td:first-child { color: #d4af37; font-weight: 600; font-size: 0.78rem; }
+td:last-child { color: #3a3020; }
+tr:last-child td { border: none; }
+
+.features-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.4rem; }
+.features-list li { font-size: 0.85rem; color: #5a5040; display: flex; align-items: center; gap: 8px; }
+.features-list li::before { content: '—'; color: #d4af37; font-size: 0.75rem; }
+
+@media (max-width: 640px) {
+  .grid { grid-template-columns: 1fr; }
+  .card.full { grid-column: span 1; }
+}

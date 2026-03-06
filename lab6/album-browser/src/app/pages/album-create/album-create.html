@@ -1,0 +1,36 @@
+<h1>New Album</h1>
+
+@if (error()) {
+  <p class="error">{{ error() }}</p>
+}
+
+<div class="card">
+  <label class="field">
+    <span>User ID (1–10)</span>
+    <input
+      type="number"
+      [ngModel]="userId()"
+      (ngModelChange)="userId.set($event)"
+      min="1"
+      max="10"
+    />
+  </label>
+
+  <label class="field">
+    <span>Title (min 3 chars)</span>
+    <input
+      type="text"
+      [ngModel]="title()"
+      (ngModelChange)="title.set($event)"
+      placeholder="Enter album title..."
+    />
+  </label>
+
+  <div class="actions">
+    <button (click)="submit()" [disabled]="creating()">
+      @if (creating()) { Creating... } @else { Create }
+    </button>
+
+    <button class="secondary" (click)="cancel()">Cancel</button>
+  </div>
+</div>

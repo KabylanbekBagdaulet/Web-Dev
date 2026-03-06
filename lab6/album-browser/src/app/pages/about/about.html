@@ -1,0 +1,61 @@
+<h1>About</h1>
+
+<div class="grid">
+  <div class="card full">
+    <div class="card-label">Project</div>
+    <p><b>Album Browser</b> is a multi-page SPA built with Angular routing, HttpClient, and Observables — Lab 6 of the Web Application Development course at KBTU.</p>
+    <p>Data is fetched from <b>JSONPlaceholder</b>. Photos are sourced from <b>Picsum Photos</b>. All CRUD operations update the UI optimistically.</p>
+  </div>
+
+  <div class="card">
+    <div class="card-label">Developer</div>
+    <ul class="info-list">
+      <li><span class="lbl">Name</span><span class="val">Aitkhozha Ilyas</span></li>
+      <li><span class="lbl">Course</span><span class="val">2nd year · KBTU IS</span></li>
+      <li><span class="lbl">Lab</span><span class="val">Lab 6 — Routing & HTTP</span></li>
+      <li><span class="lbl">Year</span><span class="val">2025</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="card-label">Stack</div>
+    <div class="tags">
+      <span class="tag">Angular 21</span>
+      <span class="tag">TypeScript</span>
+      <span class="tag">RxJS</span>
+      <span class="tag">HttpClient</span>
+      <span class="tag">Signals</span>
+      <span class="tag">JSONPlaceholder</span>
+      <span class="tag">Picsum</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-label">Features</div>
+    <ul class="features-list">
+      <li>6 routes with Angular Router</li>
+      <li>HTTP CRUD via AlbumService</li>
+      <li>Favorites with localStorage</li>
+      <li>Create, edit &amp; delete albums</li>
+      <li>Photo grid from Picsum Photos</li>
+      <li>Reactive Signals throughout</li>
+    </ul>
+  </div>
+
+  <div class="card full">
+    <div class="card-label">API Reference</div>
+    <table>
+      <thead>
+        <tr><th>Method</th><th>Endpoint</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>GET</td><td>/albums</td><td>Fetch all albums</td></tr>
+        <tr><td>GET</td><td>/albums/:id</td><td>Single album</td></tr>
+        <tr><td>GET</td><td>/albums/:id/photos</td><td>Album photos</td></tr>
+        <tr><td>POST</td><td>/albums</td><td>Create album</td></tr>
+        <tr><td>PUT</td><td>/albums/:id</td><td>Update album</td></tr>
+        <tr><td>DELETE</td><td>/albums/:id</td><td>Delete album</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>

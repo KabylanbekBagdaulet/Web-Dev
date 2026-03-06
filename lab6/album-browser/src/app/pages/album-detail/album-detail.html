@@ -1,0 +1,73 @@
+@if (loading()) {
+  <div class="state">
+    <div class="spinner"></div>
+    <p>Loading album...</p>
+  </div>
+} @else if (error()) {
+  <div class="state error">
+    <p class="error-text">{{ error() }}</p>
+  </div>
+} @else if (album()) {
+  <div class="page">
+    <button class="back-btn" (click)="back()">
+      ← Albums
+    </button>
+
+    <div class="card" [class.is-favorite]="isFavorite()">
+      <div class="card-top">
+        <div>
+          <div class="album-id">Album #{{ album()!.id }}</div>
+          <h2 class="album-title">{{ album()!.title }}</h2>
+          <p class="album-user">User {{ album()!.userId }}</p>
+        </div>
+
+        <button
+          class="btn-star"
+          [class.starred]="isFavorite()"
+          (click)="toggleFavorite()"
+          [attr.aria-pressed]="isFavorite()"
+          [attr.aria-label]="isFavorite() ? 'Remove from favorites' : 'Add to favorites'"
+        >
+          <span class="star-icon">{{ isFavorite() ? '★' : '☆' }}</span>
+          <span class="star-text">{{ isFavorite() ? 'Saved' : 'Save' }}</span>
+        </button>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-label">Edit Title</div>
+        <div class="input-row">
+          <input
+            class="input"
+            [ngModel]="editedTitle()"
+            (ngModelChange)="editedTitle.set($event)"
+            placeholder="Enter album title..."
+            [disabled]="saving()"
+          />
+          <button class="btn primary" (click)="save()" [disabled]="saving()">
+            @if (saving()) {
+              <span class="spinner-sm"></span>
+              Saving
+            } @else {
+              Save
+            }
+          </button>
+        </div>
+        <p class="footnote">{{ editedTitle().length }} characters</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="section">
+        <div class="section-label">Actions</div>
+        <div class="actions">
+          <a class="btn secondary" [routerLink]="['/albums', album()!.id, 'photos']">
+            View Photos
+          </a>
+          <button class="btn ghost" (click)="back()">Back to List</button>
+        </div>
+      </div>
+    </div>
+  </div>
+}

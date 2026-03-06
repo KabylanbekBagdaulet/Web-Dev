@@ -1,0 +1,23 @@
+<button class="back-btn" (click)="back()">← Back to Album</button>
+
+<div class="page-header">
+  <h1>Album #{{ albumId() }}</h1>
+  <p class="subtitle">{{ photos().length }} photos</p>
+</div>
+
+<div class="grid">
+  @for (photo of photos(); track photo.id) {
+    <div class="photo">
+      <img
+        [src]="'https://picsum.photos/seed/' + photo.id + '/150/150'"
+        [alt]="photo.title"
+        loading="lazy"
+      />
+      <div class="photo-overlay">
+        <p class="photo-title">{{ photo.title }}</p>
+      </div>
+    </div>
+  }
+</div>
+
+<button class="btn" (click)="back()">← Back</button>

@@ -1,0 +1,69 @@
+<div class="page-header">
+  <div>
+    <h1>Albums</h1>
+    <p class="count">
+      @if (!loading() && !error()) {
+        {{ showFavoritesOnly() ? (displayedAlbums().length + ' favorites') : (albums().length + ' albums') }}
+      }
+    </p>
+  </div>
+
+  @if (!loading() && !error()) {
+    <div class="toolbar">
+      <button
+        class="btn-filter"
+        [class.active]="showFavoritesOnly()"
+        (click)="showFavoritesOnly.set(!showFavoritesOnly())"
+        [attr.aria-pressed]="showFavoritesOnly()"
+      >
+        {{ showFavoritesOnly() ? '★' : '☆' }}
+        {{ showFavoritesOnly() ? 'Show All' : 'Favorites' }}
+        @if (favCount() > 0) {
+          <span class="fav-badge">{{ favCount() }}</span>
+        }
+      </button>
+    </div>
+  }
+</div>
+
+@if (loading()) {
+  <div class="state">Loading albums...</div>
+} @else if (error()) {
+  <div class="state error-state">{{ error() }}</div>
+} @else if (albums().length === 0) {
+  <div class="state">No albums found.</div>
+} @else if (showFavoritesOnly() && displayedAlbums().length === 0) {
+  <div class="state">
+    <p class="empty-title">No favorites yet</p>
+    <p class="empty-hint">Star an album to save it here.</p>
+    <button class="btn-show-all" (click)="showFavoritesOnly.set(false)">Browse all albums</button>
+  </div>
+} @else {
+  <ul class="list" role="list">
+    @for (album of displayedAlbums(); track album.id) {
+      <li class="item" [class.is-favorite]="isFav(album.id)" (click)="navigate(album.id)">
+        <button
+          class="btn-star"
+          (click)="toggleFav($event, album.id)"
+          [attr.aria-pressed]="isFav(album.id)"
+          [attr.aria-label]="(isFav(album.id) ? 'Remove' : 'Favorite') + ' album ' + album.id"
+        >{{ isFav(album.id) ? '★' : '☆' }}</button>
+
+        <span class="id-pill">#{{ album.id }}</span>
+
+        <div class="text">
+          <span class="title">{{ album.title }}</span>
+          <span class="meta">User {{ album.userId }}</span>
+        </div>
+
+        <button
+          class="btn-delete"
+          (click)="deleteAlbum(album.id, $event)"
+          aria-label="Delete album {{ album.id }}"
+        >🗑</button>
+
+        <span class="arrow">›</span>
+      </li>
+    }
+  </ul>
+}
